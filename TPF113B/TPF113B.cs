@@ -59,13 +59,13 @@ namespace TPF113B
 
         private async Task CrowPort_OnReceivedData(byte[] data)
         {
-            _logger.Trace($"FlueGasAnalyzer Rec:<-- {StringByteUtils.BytesToString(data)}");
+            _logger.Trace($"TPF113B Rec:<-- {StringByteUtils.BytesToString(data)}");
             await Task.CompletedTask;
         }
 
         private async Task CrowPort_OnSentData(byte[] data)
         {
-            _logger.Trace($"FlueGasAnalyzer Send:--> {StringByteUtils.BytesToString(data)}");
+            _logger.Trace($"TPF113B Send:--> {StringByteUtils.BytesToString(data)}");
             await Task.CompletedTask;
         }
 
